@@ -128,7 +128,8 @@ h2 { font-weight: 500; font-size: 25px; line-height: 1.3; letter-spacing: -0.3px
 .experience-list dt { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; }
 .institution-mark { position: absolute; top: 0; left: 0; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
 .institution-mark img { display: block; flex: none; width: 56px; height: 56px; object-fit: contain; }
-.institution-mark--cuhk img { width: 64px; height: 64px; }
+/* Show the 126 × 100 emblem region of the unmodified, transparent official lockup. */
+.institution-mark--cuhk img { width: 50.4px; height: 40px; object-fit: cover; object-position: left center; }
 /* The official ZJU file includes wide blank margins; normalize its optical size without altering the seal. */
 .institution-mark--zju img { width: 104px; height: 83px; max-width: none; }
 .institution { font-size: 14.5px; font-weight: 600; }
@@ -190,7 +191,7 @@ body.dialog-open { overflow: hidden; }
   .experience-list > div { padding-left: 66px; margin-bottom: 23px; }
   .institution-mark { top: 2px; width: 50px; height: 54px; }
   .institution-mark img { width: 46px; height: 48px; }
-  .institution-mark--cuhk img { width: 54px; height: 54px; }
+  .institution-mark--cuhk img { width: 40.32px; height: 32px; }
   .institution-mark--zju img { width: 84px; height: 67px; }
   .dates { display: block; margin: 2px 0 3px; font-size: 12px; }
   .site-footer { margin-top: 33px; }
