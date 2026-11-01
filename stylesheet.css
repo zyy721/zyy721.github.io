@@ -124,8 +124,13 @@ h2 { font-weight: 500; font-size: 25px; line-height: 1.3; letter-spacing: -0.3px
 .robotics-copy .paper-links { font-size: 12.5px; }
 .related-paper { color: var(--muted); font-size: 12.5px; margin: 19px 0 0; }
 .experience-list { margin: 21px 0 0; }
-.experience-list > div { margin: 0 0 19px; }
+.experience-list > div { position: relative; min-height: 64px; margin: 0 0 23px; padding-left: 82px; }
 .experience-list dt { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; }
+.institution-mark { position: absolute; top: 0; left: 0; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.institution-mark img { display: block; flex: none; width: 56px; height: 56px; object-fit: contain; }
+.institution-mark--cuhk img { width: 64px; height: 64px; }
+/* The official ZJU file includes wide blank margins; normalize its optical size without altering the seal. */
+.institution-mark--zju img { width: 104px; height: 83px; max-width: none; }
 .institution { font-size: 14.5px; font-weight: 600; }
 .dates { color: var(--muted); font-size: 13px; white-space: nowrap; }
 .experience-list dd { margin: 1px 0 0; font-size: 14px; }
@@ -182,6 +187,11 @@ body.dialog-open { overflow: hidden; }
   .robotics-preview { margin-top: 3px; }
   .robotics-preview img { height: 74px; object-position: center top; }
   .experience-list dt { display: block; }
+  .experience-list > div { padding-left: 66px; margin-bottom: 23px; }
+  .institution-mark { top: 2px; width: 50px; height: 54px; }
+  .institution-mark img { width: 46px; height: 48px; }
+  .institution-mark--cuhk img { width: 54px; height: 54px; }
+  .institution-mark--zju img { width: 84px; height: 67px; }
   .dates { display: block; margin: 2px 0 3px; font-size: 12px; }
   .site-footer { margin-top: 33px; }
   .figure-dialog { width: calc(100vw - 20px); max-height: calc(100dvh - 24px); padding: 10px 12px 14px; }
